@@ -258,6 +258,14 @@ Converts 2D arrays to RGB frames and saves as an MP4 video.
 - [x] Improve documentation with examples
 - [ ] Add support for additional detector types
 
+
+---
+
+## Usecase
+
+This workflow was used in the following paper for GID data analysis:
+https://doi.org/10.26434/chemrxiv.15001269/v1
+
 ---
 
 ## License
@@ -271,8 +279,8 @@ This project is maintained by ESRF (European Synchrotron Radiation Facility). Th
 Contributions are welcome! If you'd like to contribute to this project, please reach out.
 
 **Contributors:**
-- Nikoo Ghanadan
-- Thomas Sarrazin
+- Nikoo Ghanadan (ESRF / ULEI)
+- Thomas Sarrazin (ESRF / UGA)
 
 ---
 
