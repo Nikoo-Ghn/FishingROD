@@ -90,11 +90,14 @@ pip install h5py matplotlib scipy scikit-learn imageio lmfit
 
 ---
 
-## Usage
-To run the code write:
+### Running the Script
+
+Execute the script with your configuration file from terminal:
+
 ```bash
 python FishingROD.py --config example_config
 ```
+
 ### Configuration
 
 Edit the `config.py` file with your experimental parameters:
@@ -119,14 +122,6 @@ Edit the `config.py` file with your experimental parameters:
 | `mask_range` | Area to mask `{'qxy': (min, max), 'qz': (min, max)}` | `{'qxy': (0, 0), 'qz': (0, 0)}` |
 
 **Tip:** Start with `wqxy = (0, 10)` if the range is unknown, then narrow down based on initial results.
-
-### Running the Script
-
-Execute the script with your configuration file:
-
-```bash
-python FishingROD.py --config your_config.py
-```
 
 ---
 
