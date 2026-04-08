@@ -117,9 +117,10 @@ def deadpix(Data0, cfg):
     nic = Data0.shape[0]
     stack = []
     diff_stack = []
+    sigma_blur=cfg['blur_sigma']
     for i in range(nic):
         image=Data0[i, :, :]
-        blurred = gaussian_filter(image, sigma=3)
+        blurred = gaussian_filter(image, sigma=sigma_blur)
         # Compute the difference image
         diff = image - blurred
         diff_stack.append(diff)
