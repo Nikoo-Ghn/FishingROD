@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "FishingROD"
+version: "2.2"
+abstract: >
+  A Python tool for processing GID (Grazing Incidence Diffraction) data
+  from MaxiPix detectors. The script identifies peak images in Q-space,
+  sums them while using non-peak images as background, and performs
+  Gaussian fitting on the resulting data.
+authors:
+  - family-names: Ghanadan
+    given-names: Nikoo
+    affiliation: "ESRF / ULEI"
+    email: Nikoo.Ghanadan@esrf.fr
+  - family-names: Sarrazin
+    given-names: Thomas
+    affiliation: "ESRF / UGA"
+repository-code: "https://github.com/Nikoo-Ghn/FishingROD"
+license: "proprietary"
+keywords:
+  - GID
+  - grazing incidence diffraction
+  - MaxiPix
+  - reciprocal space
+  - synchrotron
+  - X-ray diffraction
+  - peak detection
+  - Gaussian fitting
+  - background subtraction
+references:
+  - type: article
+    title: "ChemRxiv preprint"
+    url: "https://doi.org/10.26434/chemrxiv.15001269/v1"
