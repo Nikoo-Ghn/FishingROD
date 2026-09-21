@@ -264,7 +264,7 @@ Converts 2D arrays to RGB frames and saves as an MP4 video.
 ## Usecase
 
 This workflow was used in the following paper for GID data analysis:
-https://doi.org/10.26434/chemrxiv.15001269/v1
+https://doi.org/10.1002/advs.76354
 
 ---
 
