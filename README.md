@@ -36,6 +36,31 @@ This Python script processes GID data collected using the MaxiPix detector. It i
 - Animated GIF/MP4 of all processed images
 - 1D curves converted from 2D images with Gaussian fitting
 
+## Architecture
+```mermaid
+flowchart LR
+    config["Config"]
+    data[("HDF5")]
+
+    ingest["Ingest"]
+    process["Q-space processing"]
+    peaks["Peak classification"]
+    aggregate["Aggregation"]
+    profile["1D profile"]
+    fit["Gaussian fit"]
+    results["Plots & results"]
+
+    config --> ingest
+    data --> ingest
+    ingest --> process
+    process --> peaks
+    peaks --> aggregate
+    aggregate --> profile
+    profile --> fit
+    aggregate --> results
+    fit --> results
+```
+
 ---
 
 ## Features
@@ -60,7 +85,6 @@ This Python script processes GID data collected using the MaxiPix detector. It i
 - **lmfit** - Curve fitting
 
 ---
-
 ## Getting Started
 
 ### Prerequisites
